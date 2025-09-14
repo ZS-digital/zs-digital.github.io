@@ -1,72 +1,167 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio – ZS Digital</title>
-  <link rel="stylesheet" href="style.css"> <!-- Lien vers ton CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZS Digital — Web Designer</title>
+  <meta name="description" content="Portfolio web designer — UX/UI, sites modernes, animations.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <h1>ZS Digital</h1>
-    <p>Web Designer – Création de sites modernes & UX</p>
+  <!-- ====== NAV ====== -->
+  <header class="nav">
+    <a class="brand" href="#top">ZS<span>Digital</span></a>
+    <nav>
+      <a href="#work">Projets</a>
+      <a href="#about">À propos</a>
+      <a class="btn" href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#projects">Projets</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- Section À propos -->
-  <section id="about">
-    <h2>À propos</h2>
-    <p>
-      Je suis web designer spécialisé(e) dans la création de sites modernes,
-      intuitifs et esthétiques. J’aide mes clients à transformer leurs idées
-      en expériences digitales efficaces et attractives.
-    </p>
+  <!-- ====== HERO ====== -->
+  <section id="top" class="hero" aria-label="Introduction">
+    <div class="hero-media" role="img" aria-label="Ecran design abstrait"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="badge">Web Designer • UX/UI</p>
+      <h1>
+        Des interfaces <span class="neon">créatives</span><br/>
+        et des expériences <span class="neon neon-cyan">ultra-fluides</span>
+      </h1>
+      <p class="lead">Je conçois des sites modernes, rapides et mémorables, avec des animations subtiles qui font la différence.</p>
+      <div class="cta-row">
+        <a class="btn primary glow" href="#work">Voir mes projets</a>
+        <a class="btn ghost" href="#contact">Discuter d’un projet</a>
+      </div>
+      <div class="scroll-hint">Scroll</div>
+    </div>
+    <div class="hero-gradient"></div>
   </section>
 
-  <!-- Section Projets -->
-  <section id="projects">
-    <h2>Mes Projets</h2>
-    <div class="projects">
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200" alt="Projet 1">
-        <h3>Projet 1</h3>
-        <p>Site vitrine moderne pour une marque.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200" alt="Projet 2">
-        <h3>Projet 2</h3>
-        <p>Portfolio interactif UX/UI avec animations.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200" alt="Projet 3">
-        <h3>Projet 3</h3>
-        <p>Refonte d’une boutique en ligne.</p>
+  <!-- ====== MARQUEE OUTILS ====== -->
+  <section class="marquee" aria-label="Outils">
+    <div class="track">
+      <span>Figma</span>
+      <span>Framer</span>
+      <span>WordPress</span>
+      <span>Webflow</span>
+      <span>Illustrator</span>
+      <span>After Effects</span>
+      <span>CSS Animations</span>
+      <span>GSAP</span>
+    </div>
+  </section>
+
+  <!-- ====== PROJETS ====== -->
+  <section id="work" class="section">
+    <div class="section-head">
+      <h2>Projets sélectionnés</h2>
+      <p>Quelques travaux récents — brand, sites vitrines, e-commerce, landing pages animées.</p>
+    </div>
+
+    <div class="grid">
+      <!-- CARD -->
+      <article class="card">
+        <a class="card-media parallax" href="#" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2?q=80&w=1600&auto=format&fit=crop" alt="UI sombre moderne">
+        </a>
+        <div class="card-body">
+          <h3>Portfolio créatif</h3>
+          <p>Design full-screen, transitions douces, micro-interactions.</p>
+          <div class="tags"><span>UX/UI</span><span>Animations</span><span>Framer</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="card-media parallax" href="#" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop" alt="Dashboard lumineux">
+        </a>
+        <div class="card-body">
+          <h3>Dashboard e-commerce</h3>
+          <p>Composants réutilisables, typographie forte, accessibilité.</p>
+          <div class="tags"><span>Design System</span><span>Prototype</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="card-media parallax" href="#" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1600&auto=format&fit=crop" alt="Landing page colorée">
+        </a>
+        <div class="card-body">
+          <h3>Landing page produit</h3>
+          <p>Hero “waouh”, gradients, CTA néon, 98 Lighthouse.</p>
+          <div class="tags"><span>Landing</span><span>SEO</span><span>Perf</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="card-media parallax" href="#" target="_blank" rel="noopener">
+          <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Workspace design minimal">
+        </a>
+        <div class="card-body">
+          <h3>Site vitrine premium</h3>
+          <p>Grille éditoriale, photos héro, effets parallax légers.</p>
+          <div class="tags"><span>Brand</span><span>Vitrine</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====== À PROPOS ====== -->
+  <section id="about" class="section alt">
+    <div class="about-wrap">
+      <img class="about-img" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop" alt="Designer au travail">
+      <div class="about-text glass">
+        <h2>À propos</h2>
+        <p>Je transforme des idées en expériences digitales claires et désirables. J’adore les détails : rythme typographique, micro-interactions, performance et accessibilité.</p>
+        <ul class="bullets">
+          <li>Design systems & bibliothèques UI</li>
+          <li>Prototypes haute fidélité (Figma/Framer)</li>
+          <li>Intégration web propre & optimisée</li>
+        </ul>
+        <a class="btn primary glow" href="#contact">Parlons de votre projet</a>
       </div>
     </div>
   </section>
 
-  <!-- Section Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p style="text-align:center;">
-      📧 <a href="mailto:tonemail@example.com">tonemail@example.com</a><br>
-      💼 <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
-      <a href="https://github.com/ZS-digital" target="_blank">GitHub</a>
-    </p>
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="section">
+    <div class="section-head">
+      <h2>Contact</h2>
+      <p>Un projet en tête ? Écrivons quelque chose de beau et efficace.</p>
+    </div>
+    <form class="contact">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre e-mail" required>
+      <textarea name="message" rows="5" placeholder="Parlez-moi de votre projet" required></textarea>
+      <button class="btn primary glow" type="submit">Envoyer</button>
+      <p class="note">Ce formulaire est statique. Remplacez l’action par un service (Formspree, Netlify Forms) si besoin.</p>
+    </form>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 ZS Digital – Web Designer</p>
+  <footer class="footer">
+    <p>© <span id="year"></span> ZS Digital — Web Designer. Fait avec ❤ et un peu de néon.</p>
   </footer>
 
+  <script>
+    // Année automatique
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Parallax léger sur les images .parallax
+    const items = document.querySelectorAll('.parallax');
+    items.forEach(el=>{
+      el.addEventListener('mousemove', e=>{
+        const r = el.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        el.style.transform = `translateY(-6px) rotateX(${y*-3}deg) rotateY(${x*3}deg)`;
+      });
+      el.addEventListener('mouseleave', ()=> {
+        el.style.transform = '';
+      });
+    });
+  </script>
 </body>
 </html>
